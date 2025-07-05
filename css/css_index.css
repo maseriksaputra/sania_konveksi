@@ -1,0 +1,247 @@
+
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+header.transparent {
+  background-color: transparent;
+}
+
+header.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #15B392;
+}
+
+nav a.scrolled-nav {
+  color: #333;
+}
+
+.login-btn {
+  background-color: #15B392;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #15B392;
+}
+
+.main-banner {
+position: relative;
+width: 100%;
+padding-top: 46%;
+overflow: hidden;
+}
+
+.main-banner img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.main-banner::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.2); /* Darken by 20% */
+z-index: 1;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay h2 {
+  font-size: 2rem;
+  color: #15B392;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.button-group a {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button-group .primary-btn {
+  background-color: #15B392;
+  color: white;
+}
+
+.button-group .primary-btn:hover {
+  background-color: #15B392;
+}
+
+.button-group .secondary-btn {
+  background-color: white;
+  color: #333;
+  border: 2px solid #15B392;
+}
+
+.button-group .secondary-btn:hover {
+  background-color: #f4f4f4;
+}
+
+/* Section Styles */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #15B392;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #15B392;
+}
+
+/* Gaya untuk tombol order */
+.order-button {
+  background-color: white;
+  color: #15B392; /* Warna hijau keputihan */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Menambahkan sedikit jarak antara ikon dan teks */
+.order-button i {
+  margin-right: 10px;
+}
+
+/* Efek hover */
+.order-button:hover {
+  background-color: #15B392; /* Hijau keputihan saat hover */
+  color: white; /* Teks menjadi putih */
+  transform: scale(1.1); /* Efek sedikit membesar */
+}
+
+/* Efek untuk transisi warna teks dan background */
+.order-button:active {
+  background-color: #12A57E;
+  color: white;
+}
