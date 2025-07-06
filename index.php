@@ -981,7 +981,7 @@
                     <i class="fas fa-eye"></i>
                     Lihat Layanan
                 </a>
-                <a href="https://wa.me/082250791395?text=Halo%20Sania%20Konveksi%2C%20saya%20ingin%20konsultasi%20tentang%20produk%20Anda." class="btn btn-secondary" target="_blank">
+                <a href="https://wa.me/0822xxxxxxxxx?text=Halo%20Sania%20Konveksi%2C%20saya%20ingin%20konsultasi%20tentang%20produk%20Anda." class="btn btn-secondary" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     Konsultasi Gratis
                 </a>
@@ -1205,7 +1205,7 @@
                     <i class="fas fa-phone-alt"></i>
                     Hubungi Kami
                 </a>
-                <a href="https://wa.me/082250791395?text=Halo%20Sania%20Konveksi%2C%20saya%20ingin%20memesan%20produk%20Anda." class="cta-button-large cta-btn-secondary" target="_blank">
+                <a href="https://wa.me/08225xxxxxxxx?text=Halo%20Sania%20Konveksi%2C%20saya%20ingin%20memesan%20produk%20Anda." class="cta-button-large cta-btn-secondary" target="_blank">
                     <i class="fab fa-whatsapp"></i>
                     Order Via WhatsApp
                 </a>
